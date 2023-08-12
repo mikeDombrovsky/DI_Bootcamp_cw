@@ -1,0 +1,36 @@
+:root {
+    --grid-gap:5px;
+}
+
+
+.wrapper {
+    text-align: center;
+    height: 100vh;
+    display: grid;
+    grid-gap: var(--grid-gap);
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 30px auto 25px;
+    grid-template-areas: 
+    "header header header"
+    "sidebar content content"
+    "aa aa aa"
+}
+
+header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+article {
+    grid-area: content;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: blanchedalmond;
+}
+
+footer{
+    grid-area: aa;
+    background-color: aqua;
+}
