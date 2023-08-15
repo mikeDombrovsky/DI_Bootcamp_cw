@@ -27,3 +27,16 @@ SELECT f_id, airline_name FROM flights
 WHERE airline_code = 'EJ';
 
 -- UPDATE flights SET airline_name = 'ELAL' WHERE airline_code = 'EA';
+
+
+--  UPDATE flights SET airline_name = 'ELAL' WHERE airline_code = 'EA';
+
+-- DELETE FROM flights WHERE f_id = 1;
+
+-- TRUNCATE TABLE flights; --resize
+
+
+SELECT * FROM flights 
+-- WHERE airline_name LIKE '%a%'
+WHERE f_id IN (1,20)
+ORDER BY airline_name ASC;
