@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="index.html" method="POST" onsubmit="validateForm(event)">
+        <input type="text" name="username" id="username" placeholder="Username">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <input type="submit" value="Submit">
+
+        <select name="select" id="select" multiple><!-- multiply allow to choose several prtions -->
+            <option value="">zero</option>
+            <option value="1">one</option>
+            <option value="2">two</option>
+            <option value="3">three</option>
+        </select>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!-- POST GET DELETE PUT -->
