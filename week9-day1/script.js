@@ -1,6 +1,6 @@
 const form = document.forms[0];
 console.log(form);
-
+let counter = 4;
 
 function validateForm(e) {
     e.preventDefault();
@@ -12,5 +12,15 @@ function validateForm(e) {
         .filter(option => option.selected)
         .map(option => option.value);
     console.log('Selected: ', selected);
+}
+
+function addOption(){
+    const select = form.elements.select;
+    // const newOption = document.createElement('option');
+    // newOption.value = counter;
+    // newOption.innerText = 'Enother' + counter++;
+    const newOption = new Option('Enother'+ counter, counter++);
+
+    select.appendChild(newOption);
 }
 

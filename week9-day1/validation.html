@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="index.html" method="POST" onsubmit="validateForm(event)">
+        <input 
+        type="text" 
+        name="username" 
+        id="username" 
+        placeholder="Username" 
+        pattern="[abc]"
+        maxlength="10"
+        minlength="1"
+        >
+        <input type="number" name="num" id="num" min="1" max="10">
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="password" name="password" id="password" placeholder="Password">
+        <input type="submit" value="Submit">
+    </form>
+    <script src="validation.js"></script>
+</body>
+
+</html>
