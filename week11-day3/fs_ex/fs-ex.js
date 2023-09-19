@@ -17,7 +17,7 @@ fs.writeFile('info.json', 'new content', (err, data) => {
     }
 });
 
-fs.copyFile('info.json', 'newname/json'(err, data) => {
+fs.copyFile('info.json', 'newname/json',(err, data) => {
     if(err) {
         return console.log(err);
     }
