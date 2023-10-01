@@ -4,7 +4,7 @@ const { users } = require('./config/users.js');
 
 const app = express();
 // parse application/x-www-form-urlencoded
-app.use(express.urlencoded({ extended: false }))
+// app.use(express.urlencoded({ extended: false }))0
 
 // parse application/json
 app.use(express.json())
