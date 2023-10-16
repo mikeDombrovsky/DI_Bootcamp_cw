@@ -1,6 +1,7 @@
 const express = require('express');
 const { users_router } = require('./routes/users.route.js');
 const { products_router } = require('./routes/products.route.js');
+const { auth } = require('./middlewares/auth.js');
 
 
 const app = express();
@@ -14,17 +15,7 @@ const logger = (req, res, next) => {
     next();
 }
 
-const auth = (req, res, next) => {
-    const { id } = req.params;
-    if(id < 0){
-        res.status(401).json({error: 'not authorized'});
-    }else{
-         next();
-    }
-   
-}
-
-// app.use(logger);
+// app.use(logger);//for all routers
 app.use('/posts', [auth, logger]);//several middlewares
 app.use('/users', logger);//just for exect path
 
