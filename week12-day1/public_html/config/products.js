@@ -14,7 +14,6 @@ const products = [
     },
 ];
 
-
 const db = knex({
     client: 'pg',
     connection: {
