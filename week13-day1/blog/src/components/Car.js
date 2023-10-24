@@ -4,7 +4,7 @@ class Car extends React.Component {
     render(){
         return (
             <div>
-                <h1>Car component</h1>
+                <h1>Car component, named{this.props.carName}</h1>
             </div>
         )
     }
