@@ -1,10 +1,10 @@
 const Actor = (props) => {
 
     return (
-        <ul>
+        <ul style={{ color: "blue" }}>
             {props.actors.map((actor, i) => {
                 const { firstName, lastName, image } = actor;
-                return <li key={i}>{firstName} {lastName} <img src={image} width={100}/></li>
+                return <li key={i}>{firstName} {lastName} <img src={image} width={100} /></li>
             })}
         </ul>
     )
