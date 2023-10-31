@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SearchBox from '../components/SearchBox'
 import CardList from '../components/CardList';
 import Scroll from '../components/Scroll'
-import ErrorBoundry from '../components/ErrorBoundry';
+import ErrorBoundry from '../components/ErrorBoundary';
 
 import './App.css';
 
