@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import SearchCar from './components/SearchCar';
 import { useState } from 'react';
@@ -8,6 +8,8 @@ import About from './components/About';
 import Projects from './components/Projects';
 import { Route, Routes, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Heroes from './components/Heroes';
+import ErrorBoundary from './components/ErrorBoundary';
 
 const listCars = [
   {
@@ -69,8 +71,16 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/projects' element={<Projects />} />
+        <Route path='/projects/:name/:id' element={<Projects />} />
       </Routes>
+      <ErrorBoundary>
+        <Heroes name='Luke' />
+      </ErrorBoundary>
+
+      <Heroes name='Yoda' />
+      <ErrorBoundary>
+        <Heroes name='Darth Vader' />
+      </ErrorBoundary>
     </div>
   );
 }
