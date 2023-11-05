@@ -12,11 +12,10 @@ const Products = (props) => {
   const getAllProducts = async () => {
     try {
       const res = await fetch("http://localhost:3001/products");
-      console.log(res);
+
       const data = await res.json();
-      console.log(data);
+
       setProducts(data);
-      
     } catch (err) {
       console.log(err);
     }
@@ -41,9 +40,8 @@ const Products = (props) => {
         }),
       });
 
-      console.log(res);
       const data = await res.json();
-      console.log(data);
+
       setProducts(data);
     } catch (err) {
       console.log(err);
@@ -70,11 +68,12 @@ const Products = (props) => {
       </div>
       {products.map((item) => {
         return (
-          <div key={item.id}>
-            <h4>{item.name}</h4>
-            <h4>{item.price}</h4>
-            <Link to={`/${item.id}`}>Shop now</Link>
-          </div>
+          <Link to={`/${item.id}`}>
+            <div key={item.id} style={{ border: "solid 1px black" }}>
+              <h4>{item.name}</h4>
+              <h4>{item.price}</h4>
+            </div>
+          </Link>
         );
       })}
     </>

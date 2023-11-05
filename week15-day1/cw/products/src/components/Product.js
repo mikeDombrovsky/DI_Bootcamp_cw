@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-const Product = (props) => {
+const Product = () => {
   const [product, setProduct] = useState({});
   const { id } = useParams();
 
@@ -23,7 +23,7 @@ const Product = (props) => {
   return (
     <div>
       <h1>Name: {product?.name}</h1>
-      <h2>Price: </h2>
+      <h2>Price: {product?.price}</h2>
       <Link to={`/`}>to Shop</Link>
     </div>
   );
