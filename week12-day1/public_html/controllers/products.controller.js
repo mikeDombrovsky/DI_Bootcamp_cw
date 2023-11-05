@@ -46,7 +46,8 @@ const addProduct = async (req, res) => {
     const { name, price } = req.body;
     try {
         const prod = await _addProduct(name, price);
-        res.status(200).json(prod);
+        // res.status(200).json(prod);
+        getProducts(req, res);
     } catch (err) {
         console.log(err);
         res.status(404).json({ msg: 'not found' })

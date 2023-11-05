@@ -21,4 +21,4 @@ const logger = (req, res, next) => {
 app.use('/posts', [auth, logger]);//several middlewares
 app.use('/users', logger);//just for exect path
 
-app.listen(3000, () => console.log('listening on 3000'));
+app.listen(3001, () => console.log('listening on 3001'));
