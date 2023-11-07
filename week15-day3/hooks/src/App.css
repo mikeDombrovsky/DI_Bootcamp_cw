@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+  color: gray;
+  caret-color: transparent;
+}
+
+button{
+  font-size: 25px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  outline-style: none;
+  transition: 1s;
+  box-shadow: 5px 5px 5px rgb(147, 147, 199);
+  color: white;
+  background-color: rgb(154, 154, 250);
+}
+
+button:hover{
+  background-color: rgb(123, 123, 255);
+  transition: 0.3s;
+}
+
+button:active{
+   box-shadow: 2px 2px 5px rgb(147, 147, 199);
+}
+
