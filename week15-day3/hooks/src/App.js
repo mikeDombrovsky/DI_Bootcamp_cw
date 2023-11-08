@@ -5,6 +5,7 @@ import Display from "./components/Display";
 
 import { useState, createContext } from "react";
 import UseReducer from "./components/UseReducer";
+import { TodoList } from "./components/TodoList";
 
 export const AppContext = createContext();
 
@@ -23,6 +24,7 @@ function App() {
       </AppContext.Provider>
       <UseRef />
       <UseReducer/>
+      <TodoList/>
     </div>
   );
 }
