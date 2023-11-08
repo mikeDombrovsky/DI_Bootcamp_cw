@@ -1,9 +1,10 @@
 import "./App.css";
-import App2 from "./App2";
+import UseRef from "./components/UseRef";
 import Action from "./components/Action";
 import Display from "./components/Display";
 
 import { useState, createContext } from "react";
+import UseReducer from "./components/UseReducer";
 
 export const AppContext = createContext();
 
@@ -20,7 +21,8 @@ function App() {
         <Display />
         <Action />
       </AppContext.Provider>
-      <App2/>
+      <UseRef />
+      <UseReducer/>
     </div>
   );
 }
