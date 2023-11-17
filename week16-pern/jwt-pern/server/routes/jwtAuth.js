@@ -72,7 +72,7 @@ router.get("/verify", authorization, async (req, res) => {
     res.send(true)
   } catch (error) {
     console.log(error.message);
-    res.status(500).send("server error");
+    res.status(500).json({msg:"server error"});
   }
 });
 

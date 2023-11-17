@@ -6,7 +6,7 @@ module.exports = async (req, res, next) => {
     const jwtToken = req.header("token");
 
     if (!jwtToken) {
-      return res.status(403).send("unauthorized");
+      return res.status(403).json({msg:"unauthorized"});
     }
     const payload = jwt.verify(jwtToken, process.env.JWT_SECRET);
     req.user = payload.user;
@@ -14,6 +14,6 @@ module.exports = async (req, res, next) => {
     next();
   } catch (err) {
     console.log(err.message);
-    return res.status(403).send("unauthorized");
+    return res.status(403).json({ msg: "unauthorized" });
   }
 };
