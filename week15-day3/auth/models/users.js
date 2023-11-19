@@ -5,7 +5,7 @@ export const _register = (email, password) => {
 };
 
 export const _login = (email) => {
-  return db('users')
+  return db('myusers')
   .select('id', 'email','password')
   .where({email})
 }

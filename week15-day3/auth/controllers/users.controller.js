@@ -1,4 +1,4 @@
-import { _register, _login } from "../models/users";
+// import { _register, _login } from "../models/users";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 

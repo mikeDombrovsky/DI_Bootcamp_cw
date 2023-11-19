@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { _getAllProducts } from "../controllers/products.controller";
-import { verifyToken } from "../middlewares/verifyToken";
+import { _getAllProducts } from "../controllers/products.controller.js";
+import { verifyToken } from "../middlewares/verifyToken.js";
 
 const products_router = Router();
 
