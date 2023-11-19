@@ -2,8 +2,6 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Redirect,
-  Router,
   Navigate,
 } from "react-router-dom";
 import { useState, useEffect } from "react";
