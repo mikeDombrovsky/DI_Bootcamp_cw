@@ -5,4 +5,4 @@ def multiply_by2(num):
 print(list(map(multiply_by2, [1, 2, 3])))
 
 def check_odd(num):
-    item % 2 != 0
+    return num % 2 != 0
