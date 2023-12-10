@@ -30,7 +30,7 @@ print(enumerate(['one', 'two', 'three']))
 for i, item in enumerate(['one', 'two', 'three']):
     print(i, '-', item)
     
-print(list(zip([1,3,5],['one','three','five'], [0, 1])))
+print(list(zip([1, 3, 5],['one','three','five'], [0, 1])))
 
 
 for i in range(1, 10):
