@@ -27,3 +27,25 @@ for row in picture:
         elif column_elem == 1:
             print("*", end='')
     print('')
+
+# instead of global variable
+total = 0
+
+def count(total):
+    total += 1
+    return total
+
+print(count(count(count(total))))
+
+# nonlocal keyword - kinda global
+def outer():
+    x = 'local'
+    def inner():
+        nonlocal x
+        x = 'nonlocal'
+        print('inner', x)
+        
+    inner()
+    print('outer', x)
+    
+    
