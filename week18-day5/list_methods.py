@@ -17,8 +17,9 @@ print(list(zip(['one','two'], [1, 2, 3])))
 # reduce
 def accum(acc, item):
     return acc + item
-    
-print('reduce accumulated', reduce(accum, [1, 2, 3], 0))
+
+sum = reduce(accum, [1, 2, 3], 0)
+print('reduce accumulated', sum)
 
 #list unpacking
 a, b, c, *rest= [1, 2, 3, 4, 5, 6]
