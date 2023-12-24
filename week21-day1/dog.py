@@ -17,7 +17,7 @@ class Dog:
         return f"Dog: name = {self.name}"
 
     def __len__(self):
-        if breed == "dachshund":
+        if self.breed == "dachshund":
             return self.weight * 5
         else:
             return self.weight * 3
