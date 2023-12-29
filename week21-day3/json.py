@@ -13,3 +13,9 @@ with open(json_file, 'w') as file_obj:
    # json.dump(obj2save , destination_file)
 
 print(json.dumps(my_family, indent=2))
+
+with open(json_file) as f:
+    print(json.load(f))
+    f.seek(0)
+    print(type(json.load(f)))
+ 
