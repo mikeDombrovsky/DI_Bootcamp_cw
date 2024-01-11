@@ -26,8 +26,7 @@ ax.scatter3D(x_points, y_points, z_points, c=z_points, cmap='hsv')
 
 plt.show()
 
-# Error Bars
-
+## Error Bars
 # Importing necessary libraries
 
 # Creating data
