@@ -1,23 +1,23 @@
 // indempotent - same hash from key everytime O(1)
+//Addition also, BUT may be O(n) if collisions!
 
-// let user = {
-//   age: 54,
-//   name: "Bobby",
-//   scream: function () {
-//     console.log("Fffffckk!");
-//   },
-// };
+let user = {
+  age: 54,
+  name: "Bobby",
+  scream: function () {
+    console.log("Fffffckk!");
+  },
+};
 
-// user.age; // O(1)
-// user.spell = "koko"; //O(1)
+user.age; // O(1)
+user.spell = "koko"; //O(1)
 // user.scream(); //O(1)
-// //BUT may be O(n) if collisions!
 
 // //Map --> Gives you some order
-// const mappy = new Map();
+const mappy = new Map();
 
 // //Set --> No duplicate keys
-// const setty = new Set();
+const setty = new Set();
 
 class HashTable {
   constructor(size) {
