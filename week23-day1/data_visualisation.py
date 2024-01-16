@@ -28,3 +28,5 @@ plt.xlabel('Index')  # Set the label for the x-axis
 plt.ylabel('Values')  # Set the label for the y-axis
 plt.grid(True)  # Display a grid
 plt.legend(loc='upper left')  # Place the legend in the upper left corner
+
+plt.show()
