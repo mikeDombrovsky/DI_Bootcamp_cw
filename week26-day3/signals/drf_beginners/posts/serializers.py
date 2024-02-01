@@ -10,3 +10,4 @@ class PostSerializer(serializers.ModelSerializer):
        model = Post
        fields = ('title', 'custom_id', 'category',
                  'publish_date', 'last_updated')
+    #    fields = '__all__'
